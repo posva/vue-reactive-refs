@@ -1,6 +1,6 @@
 {
   "name": "vue-reactive-refs",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Make $refs reactive so they can be used in computed properties and watchers",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
