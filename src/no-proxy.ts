@@ -15,10 +15,10 @@ export const ReactiveRefs: PluginFunction<never> = _Vue => {
       this.$refs = _Vue.observable(
         refs.reduce(
           ($refs, key) => {
-            $refs[key] = null
+            $refs[key] = undefined
             return $refs
           },
-          {} as Record<string, Vue | Element | Vue[] | Element[] | null>
+          {} as Record<string, Vue | Element | Vue[] | Element[] | undefined>
         )
       )
     },

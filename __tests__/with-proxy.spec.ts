@@ -30,26 +30,18 @@ describe('Reactive Refs with Proxy', () => {
       { localVue }
     )
 
-    expect(wrapper.vm.$refs.button).toEqual(
-      wrapper.find({ ref: 'button' }).element
-    )
+    expect(wrapper.vm.$refs.button).toBeTruthy()
     // @ts-ignore
-    expect(wrapper.vm.buttonRef).toEqual(
-      wrapper.find({ ref: 'button' }).element
-    )
+    expect(wrapper.vm.buttonRef).toEqual(wrapper.vm.$refs.button)
 
     expect(spy).toHaveBeenCalledTimes(0)
 
     // @ts-ignore
     wrapper.vm.n++
 
-    expect(wrapper.vm.$refs.button).toEqual(
-      wrapper.find({ ref: 'button' }).element
-    )
+    expect(wrapper.vm.$refs.button).toBeTruthy()
     // @ts-ignore
-    expect(wrapper.vm.buttonRef).toEqual(
-      wrapper.find({ ref: 'button' }).element
-    )
+    expect(wrapper.vm.buttonRef).toEqual(wrapper.vm.$refs.button)
 
     expect(spy).toHaveBeenCalledTimes(1)
   })
@@ -88,13 +80,9 @@ describe('Reactive Refs with Proxy', () => {
     // @ts-ignore
     wrapper.vm.n++
 
-    expect(wrapper.vm.$refs.button).toEqual(
-      wrapper.find({ ref: 'button' }).element
-    )
+    expect(wrapper.vm.$refs.button).toBeTruthy()
     // @ts-ignore
-    expect(wrapper.vm.buttonRef).toEqual(
-      wrapper.find({ ref: 'button' }).element
-    )
+    expect(wrapper.vm.buttonRef).toEqual(wrapper.vm.$refs.button)
 
     expect(spy).toHaveBeenCalledTimes(1)
   })
