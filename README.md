@@ -2,6 +2,8 @@
 
 > Make \$refs reactive so they can be used in computed properties and watchers
 
+Extremely Light < 0.2kb 🗜
+
 ## Installation
 
 ```sh
@@ -11,7 +13,7 @@ npm install vue-reactive-refs
 ## Usage
 
 This library exposes two different plugins: `ReactiveRefs` and
-`DynamicReactiveRefs`
+`DynamicReactiveRefs` and you should **only use one of them**
 
 ### `ReactiveRefs`
 
