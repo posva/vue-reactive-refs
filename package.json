@@ -1,0 +1,54 @@
+{
+  "name": "vue-reactive-refs",
+  "version": "0.0.0",
+  "description": "Make $refs reactive so they can be used in computed and watchers",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "browser": "dist/index.browser.esm.js",
+  "unpkg": "dist/index.umd.js",
+  "jsdelivr": "dist/index.umd.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "author": {
+    "name": "Eduardo San Martin Morote",
+    "email": "posva13@gmail.com"
+  },
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "unit": "jest",
+    "test": "npm run build && npm run unit",
+    "prepublishOnly": "yarn run build"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "keywords": [
+    "refs",
+    "vue",
+    "$refs",
+    "computed",
+    "watch",
+    "reactive"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^1.17.0",
+    "rollup-plugin-alias": "^1.5.2",
+    "rollup-plugin-commonjs": "^10.0.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-replace": "^2.2.0",
+    "rollup-plugin-terser": "^5.1.1",
+    "rollup-plugin-typescript2": "^0.22.0",
+    "typescript": "^3.5.3",
+    "vue": "^2.6.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/posva/vue-reactive-refs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/posva/vue-reactive-refs/issues"
+  },
+  "homepage": "https://github.com/posva/vue-reactive-refs#readme"
+}
