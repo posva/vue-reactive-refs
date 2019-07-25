@@ -16,7 +16,7 @@ export const DynamicReactiveRefs: PluginFunction<never> = _Vue => {
           return Reflect.set(target, key, value)
         },
         get(target, key) {
-          if (!(key in target)) _Vue.set($refs, key as string, null)
+          if (!(key in target)) _Vue.set($refs, key as string, undefined)
           return Reflect.get(target, key)
         },
       })
