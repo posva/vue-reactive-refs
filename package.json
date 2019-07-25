@@ -35,6 +35,7 @@
   "devDependencies": {
     "@types/jest": "^24.0.15",
     "@vue/test-utils": "^1.0.0-beta.29",
+    "codecov": "^3.5.0",
     "jest": "^24.8.0",
     "rollup": "^1.17.0",
     "rollup-plugin-alias": "^1.5.2",
