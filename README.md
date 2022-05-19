@@ -2,6 +2,8 @@
 
 > Make \$refs reactive so they can be used in computed properties and watchers
 
+**Vue 2 only** as you don't need this in Vue 3
+
 Extremely Light < 0.2kb 🗜
 
 ## Installation
